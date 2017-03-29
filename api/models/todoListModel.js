@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 
 var TaskSchema = new Schema({
-  name: {
+  src_ip: {
     type: String,
     Required: 'Kindly enter the name of the task'
   },
