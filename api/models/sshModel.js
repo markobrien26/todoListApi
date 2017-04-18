@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
-var TaskSchema = new Schema({
+var SshSchema = new Schema({
   src_ip: {
     type: String,
     Required: 'Kindly enter the name of the task'
@@ -21,4 +21,4 @@ var TaskSchema = new Schema({
   }
 });
 
-module.exports = mongoose.model('Tasks', TaskSchema);
+module.exports = mongoose.model('Ssh', SshSchema);
