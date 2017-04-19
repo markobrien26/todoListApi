@@ -2,7 +2,7 @@ var express = require('express'),
 app = express(),
 port = process.env.PORT || 3000;
 mongoose = require('mongoose'),
-Task = require('./api/models/todoListModel'),
+Alert = require('./api/models/alertModel'),
 Ssh = require('./api/models/sshModel'),
 bodyParser = require('body-parser');
 
@@ -20,7 +20,7 @@ app.use(function(req, res, next) {
 });
 
 
-var routes = require('./api/routes/todoListRoutes');
+var routes = require('./api/routes/alertRoutes');
 routes(app);
 
 app.listen(port);

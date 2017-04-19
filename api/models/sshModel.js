@@ -6,7 +6,11 @@ var Schema = mongoose.Schema;
 var SshSchema = new Schema({
   src_ip: {
     type: String,
-    Required: 'Kindly enter the name of the task'
+    Required: 'Kindly enter the IP'
+  },
+  country: {
+    type: String,
+    Required: 'Kindly enter the Country'
   },
   Created_date: {
     type: Date,
