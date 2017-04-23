@@ -20,6 +20,14 @@ var AlertSchema = new Schema({
     type: String,
     Required: 'Kindly enter the type of the alert'
   },
+  host: {
+    type: String,
+    Required: 'Kindly enter the host of the alert'
+  },
+  temperature: {
+    type: String,
+    Required: 'Kindly enter the temparature of the alert'
+  },
   Created_date: {
     type: Date,
     default: Date.now
